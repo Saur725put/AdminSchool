@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class TeachersComponent {
 
+  openModel(){
+    const modelDiv = document.getElementById("exampleModal");
+    if(modelDiv != null) {
+      modelDiv.style.display = "block";
+    }
+  }
+  closeModel(){
+    const modelDiv = document.getElementById('exampleModal');
+    if(modelDiv!= null) modelDiv.style.display = 'none';
+  }
 }

@@ -1,0 +1,66 @@
+.topContainer {
+    margin-top: 15px;
+}
+.addbtn {
+    background-color: #0B192C;
+    color: azure;
+    font-family: Karla, sans-serif;
+
+
+}
+.bottomContainer {
+    margin-top: 35px;
+
+    .usertype {
+        font-family: Karla, sans-serif;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        font-weight: 700 !important;
+        color: #000 !important;
+        /* margin: 0 !important; */
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+
+    .card {
+        width: auto;
+        margin-bottom: 24px;
+    }
+    .card-body > .btn {
+        margin-left: 10px;
+        /* padding-left: 21px;
+        padding-right: 21px;
+        width: auto; */
+        width: auto;
+    }
+    .udetailVal {
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 768px ) and (max-width: 991px) {
+    .btn1 {
+        margin-bottom: 8px;
+    }
+}
+
+
+.form-control {
+    border: none; /* Remove default border */
+    border-bottom: 2px solid rgb(37, 37, 37); /* Add black bottom border */
+    border-radius: 0; /* Remove rounded corners */
+    outline: none; /* Remove default focus outline */
+    box-shadow: none; /* Remove Bootstrap box-shadow */
+    padding-left: 0;
+  }
+  
+  .form-control:focus {
+    border-bottom: 2px solid rgb(40, 39, 39); /* Keep the black bottom border on focus */
+    outline: none; /* Remove focus outline */
+    box-shadow: none; /* Remove Bootstrap focus effect */
+  }
+
+  .form-label {
+    margin-bottom: -6px; /* Reduce this value as needed */
+  }
+  

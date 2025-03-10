@@ -1,0 +1,89 @@
+.mt-3.p-3.bg-white {
+    padding-left: 11 !important;
+    margin-left: -11px;
+}
+.mt-3.p-3.bg-white > h5 {
+    font-family: Karla, sans-serif;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    position: relative;
+    width: 300px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 45px 12px 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: white;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 400px) {
+    .search-bar {
+        width: 100%;
+        max-width: 250px;
+        margin-left: auto;
+        margin-top: 10px; /* Adds gap between button and search */
+    }
+}
+
+.assignment-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    margin: auto;
+}
+
+/* Subject Label */
+.subject {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #181d49;
+    margin-bottom: 6px;
+    background-color: #abb7f0;
+}
+
+/* Title */
+.topic {
+    color: red;
+}
+
+/* Right-align Date & Status */
+.details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.span-right {
+    text-align: right;
+    font-weight: bolder;
+    color: black;
+}
+.class-right {
+    color: #181d49;
+    background-color: #abb7f0;
+    padding: 1px 10px;
+    border-radius: 12px;
+    font-size: 15px;
+}

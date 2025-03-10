@@ -1,0 +1,37 @@
+.assignment-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    margin: auto;
+}
+
+/* Subject Label */
+.subject {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #181d49;
+    margin-bottom: 6px;
+    background-color: #7886C7;
+}
+
+/* Title */
+.topic {
+    color: red;
+}
+
+/* Right-align Date & Status */
+.details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.span-right {
+    text-align: right;
+    font-weight: bolder;
+    color: black;
+}

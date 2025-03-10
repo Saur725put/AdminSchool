@@ -1,64 +1,122 @@
-.topContainer {
-    margin-top: 15px;
+body {
+    background-color: #f8f9fa;
 }
-.addbtn {
-    background-color: #0B192C;
-    color: azure;
+
+.mt-3.p-3.bg-white {
+    padding-left: 0 !important;
+}
+
+.mt-3.p-3.bg-white > h5 {
     font-family: Karla, sans-serif;
-
-    .form-label {
-        margin-bottom: -6px; /* Reduce this value as needed */
-    }
-}
-.bottomContainer {
-    margin-top: 35px;
-
-    .usertype {
-        font-family: Karla, sans-serif;
-        font-size: 16px !important;
-        line-height: 20px !important;
-        font-weight: 700 !important;
-        color: #000 !important;
-        /* margin: 0 !important; */
-        margin-bottom: 15px;
-        margin-top: 5px;
-    }
-
-    .card {
-        width: auto;
-        margin-bottom: 24px;
-    }
-    .card-body > .btn {
-        margin-left: 10px;
-        /* padding-left: 21px;
-        padding-right: 21px;
-        width: auto; */
-        width: auto;
-    }
-    .udetailVal {
-        font-weight: 500;
-    }
 }
 
-@media (min-width: 768px ) and (max-width: 991px) {
-    .btn1 {
-        margin-bottom: 8px;
+.alert-success {
+    background-color: #90EE90;
+    font-weight: bold;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table-header {
+    background-color: #275df5;
+    color: white;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.fa-edit, .fa-trash {
+    font-size: 1.2rem;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    position: relative;
+    width: 300px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 45px 12px 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: white;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 400px) {
+    .search-bar {
+        width: 100%;
+        max-width: 250px;
+        margin-left: auto;
+        margin-top: 10px; /* Adds gap between button and search */
     }
 }
 
+.form-control, .ng-multiselect-dropdown .dropdown-btn {
+    border: none !important;
+    border-bottom: 2px solid #ced4da !important;
+    border-radius: 0 !important;
+    padding: 0 0;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid #007bff !important;
+}
+
+.mb-2 {
+    margin-bottom: 8px !important;
+}
+
+.form-label {
+    margin-bottom: 0 !important;
+    padding-bottom: 3px;
+    display: block;
+    color: black;
+}
+
+.d-flex.gap-2 {
+    gap: 10px !important;
+}
+
+.form-check-input {
+    width: 2.5em;
+    height: 1.5em;
+    border: 2px solid #ced4da;
+    position: relative;
+    left: 20px;
+}
+
+.form-check-input:checked {
+    border: none;
+}
+
+.tog {
+    display: flex;
+}
 
 .form-control {
-    border: none; /* Remove default border */
-    border-bottom: 2px solid rgb(37, 37, 37); /* Add black bottom border */
-    border-radius: 0; /* Remove rounded corners */
-    outline: none; /* Remove default focus outline */
-    box-shadow: none; /* Remove Bootstrap box-shadow */
-    padding-left: 0;
-  }
-  
-  .form-control:focus {
-    border-bottom: 2px solid rgb(40, 39, 39); /* Keep the black bottom border on focus */
-    outline: none; /* Remove focus outline */
-    box-shadow: none; /* Remove Bootstrap focus effect */
-  }
-  
+    padding: 8px 8px 8px 0;
+}
+
+.form-select {
+    padding: 8px 8px 8px 8px;
+}

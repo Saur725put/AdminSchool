@@ -1,0 +1,47 @@
+.sidebar {
+    background: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .content {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 80vh;
+  }
+  
+  .nav-link.active {
+    background-color: #007bff;
+    color: white !important;
+  }
+  
+  .upload-box {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 991px) {
+    .sidebar {
+      width: 100%;
+      margin-bottom: 20px; /* Add margin for spacing between sidebar and content */
+    }
+  }
+
+  /* Custom Scrollbar Styling */
+.content::-webkit-scrollbar {
+    width: 8px; /* Reduced width */
+  }
+  
+  .content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px; /* Circular radius */
+  }
+  
+  .content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px; /* Circular radius */
+  }
+  
+  .content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

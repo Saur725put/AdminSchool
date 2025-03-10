@@ -1,32 +1,23 @@
-<div class="container-fluid" style="background-color: #0b192c">
+<div class="container-fluid">
   <div class="container">
-    <nav class="navbar navbar-expand-lg" style="background-color: #0b192c">
-      <a class="navbar-brand">
-        <img
-        alt="this is Logo" class="obj-f-contain" src="https://stage.practiz.xyz/uploads/file/657b4213fda789c1ea441aad/file-1740756036715.png"
-        />
-        CampusTweet
-      </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="logo">
+        <a class="brand-link"><span class="brand-name">Campus</span>Tweet</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="">Teacher</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="student">Student</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="subject">Subject</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="class">Class</a>
-          </li>
-        </ul>
+        <div class="nav-link navbar-nav mr-auto">
+          <li><a routerLink="/teacher" class="nav-value nav-item " routerLinkActive="active" >Teacher</a></li>
+          <li><a routerLink="student" class="nav-value nav-item " routerLinkActive="active" >Student</a></li>
+          <li><a routerLink="class" class="nav-value nav-item " routerLinkActive="active" >Class</a></li>
+          <li><a routerLink="subject" class="nav-value nav-item " routerLinkActive="active" >Subject</a></li>
+          <li><a routerLink="announcement" class="nav-value nav-item " routerLinkActive="active" >Announcement <span class="badge bg-danger">4</span></a></li>
+          <li><a routerLink="profile" class="nav-value nav-item " routerLinkActive="active" >Profile</a></li>
+        </div>
       </div>
     </nav>
   </div>
 </div>
-
-
-
-

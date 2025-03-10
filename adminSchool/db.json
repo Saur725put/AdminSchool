@@ -1,0 +1,161 @@
+{
+  "DAVBHAGALPUR1": {
+    "SchoolName": "Dav public school",
+    "Admin": [],
+    "Teacher": [
+      {
+        "first_Name": "mayank",
+        "last_Name": "kumar",
+        "email": "mayank548@gmail.com",
+        "id": 128384,
+        "gender": "male"
+      },
+      {
+        "first_Name": "Anjali",
+        "last_Name": "Anand",
+        "email": "anjali548@gmail.com",
+        "id": 12014100,
+        "gender": "femail"
+      }
+    ],
+    "Student": [
+      {
+        "first_Name": "Anjali",
+        "last_Name": "Anand",
+        "email": "anjali548@gmail.com",
+        "id": 22014100,
+        "gender": "femail"
+      },
+      {
+        "first_Name": "rohit",
+        "last_Name": "kumar",
+        "email": "mayank548@gmail.com",
+        "id": 328384,
+        "gender": "male"
+      },
+      {
+        "first_Name": "ali",
+        "last_Name": "Anand",
+        "email": "anjali548@gmail.com",
+        "id": 42014100,
+        "gender": "femail"
+      },
+      {
+        "first_Name": "mayank",
+        "last_Name": "kumar",
+        "email": "mayank548@gmail.com",
+        "id": 528384,
+        "gender": "male"
+      }
+    ],
+    "class": [
+      {
+        "class_Name": "10",
+        "section": "A",
+        "subject": [
+          "English",
+          "Hindi",
+          "physics",
+          "chemistry",
+          "History"
+        ],
+        "student": [
+          "saurabh",
+          "mohit",
+          "Rohit",
+          "Akshay"
+        ]
+      },
+      {
+        "class_Name": "hr12",
+        "section": "C",
+        "subject": [
+          "Hindi",
+          "English"
+        ],
+        "student": [
+          "Anjali (22014100)",
+          "rohit (328384)",
+          "mayank (528384)"
+        ]
+      },
+      {
+        "class_Name": "12",
+        "section": "A",
+        "subject": [
+          "Hindi",
+          "English"
+        ],
+        "student": [
+          "Anjali (22014100)",
+          "mayank (528384)",
+          "ali (42014100)"
+        ]
+      },
+      {
+        "class_Name": "9",
+        "section": "B",
+        "subject": [
+          "Hindi",
+          "English"
+        ],
+        "student": [
+          "Anjali (22014100)",
+          "mayank (528384)"
+        ]
+      }
+    ],
+    "subject": [
+      {
+        "subject_Name": "Hindi",
+        "chapter": [
+          "chapter1",
+          "chapter2"
+        ]
+      },
+      {
+        "subject_Name": "English",
+        "chapter": [
+          "algorithm",
+          "saura"
+        ]
+      }
+    ],
+    "chapter": [
+      {
+        
+        "chapter_name": "algorithm",
+        "topic": [
+          "algo1",
+          "algo2",
+          "algo3",
+          "algo4"
+        ]
+      },
+      {
+        "chapter_name": "saura",
+        "topic": [
+          "saur1",
+          "saur2",
+          "saur3"
+        ]
+      },
+      {
+        "chapter_name": "chapter1",
+        "topic": [
+          "al1",
+          "al2",
+          "al3"
+        ]
+      },
+      {
+        "chapter_name": "chapter2",
+        "topic": [
+          "r1",
+          "r2",
+          "r3"
+        ]
+      }
+    ]
+  }
+}

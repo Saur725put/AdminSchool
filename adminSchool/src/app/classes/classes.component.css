@@ -1,0 +1,160 @@
+body {
+    background-color: #f8f9fa;
+}
+.mt-3.p-3.bg-white {
+    padding-left: 11 !important;
+    margin-left: -11px;
+}
+.mt-3.p-3.bg-white > h5 {
+    font-family: Karla, sans-serif;
+}
+
+
+/* Search Bar Styling */
+.search-bar {
+    position: relative;
+    width: 300px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 45px 12px 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: white;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 400px) {
+    .search-bar {
+        width: 100%;
+        max-width: 250px;
+        margin-left: auto;
+        margin-top: 10px; /* Adds gap between button and search */
+    }
+}
+
+
+.program-card {
+    background: white;
+    padding: 15px 15px 15px 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 13px 0px #0e060629;
+    margin-top: 15px;
+    margin-left: -10px;
+
+    /* margin-bottom: 15px; */
+}
+/* .text-del {
+    margin-left: 8px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    font-family: Karla, sans-serif;
+} */
+.program-title {
+    font-family: Karla, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    margin-left: 8px;
+}
+.program-title i {
+    /* margin-left: 5px; */
+    color: #275df5;
+}
+.sub-bad {
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+.subject-badge {
+    /* background-color: #b3e5fc; */
+    background: #275df5 !important;
+    font-family: Karla, sans-serif;
+    font-weight: 500;
+    color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    display: inline-block;
+    margin: 3px;
+    
+}
+.edited-text {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    color: #4F4F4F;
+    text-align: right;
+}
+
+
+
+
+.form-control, .ng-multiselect-dropdown .dropdown-btn {
+    border: none !important;
+    border-bottom: 2px solid #ced4da !important;
+    border-radius: 0 !important;
+    padding: 6px 6px 6px 0;
+}
+.form-control, .ng-multiselect-dropdown .dropdown-btn {
+    border: none !important;
+    border-bottom: 2px solid #ced4da !important;
+    border-radius: 0 !important;
+    padding: 6px 6px 6px 0;
+}
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid #007bff !important;
+}
+.mb-2 {
+    margin-bottom: 8px !important;
+}
+.form-label {
+    margin-bottom: 0 !important;
+    display: block;
+}
+.d-flex.gap-2 {
+    gap: 10px !important;
+}
+.form-check-input {
+    width: 2.5em;
+    height: 1.5em;
+    border: 2px solid #ced4da;
+    position: relative;
+    left: 20px;
+}
+.form-check-input:checked {
+    border: none;
+}
+.tog {
+    display: flex;
+}
+
+
+::ng-deep .multiselect-item-checked { /* Or whatever the class for checked items is */
+
+    min-width: 170px; /* Adjust this value as needed */
+    display: inline-block; /* Ensure they are inline to flow horizontally */
+    /* margin-right: 5px; Add some spacing */
+  }
+  
+  ::ng-deep .multiselect-dropdown .selected-item {
+    min-width: 170px; /* adjust this value as needed */
+  }

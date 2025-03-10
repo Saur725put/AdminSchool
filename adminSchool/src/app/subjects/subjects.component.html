@@ -1,1 +1,246 @@
-<p>subjects works!</p>
+<div class="container mt-4">
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    Data updated successfully
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+
+  <div class="row mb-3 align-items-center">
+    <div class="col-12 col-sm-auto mb-2 mb-sm-0">
+      <button
+        class="btn btn-dark w-110"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        style="
+          background-color: #275df5;
+          border: none;
+          height: 43px;
+          margin-right: 10px;
+        "
+      >
+        Create Subject
+      </button>
+      <button
+        class="btn btn-dark w-110"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal1"
+        style="background-color: #275df5; border: none; height: 43px"
+      >
+        Create Chapter
+      </button>
+    </div>
+    <div class="col-12 col-sm-auto ms-sm-auto">
+      <div class="search-bar">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search Subject"
+          [(ngModel)]="searchTerm"
+          (keyup)="searchSubjects()"
+        />
+        <i class="search-icon"><fa-icon [icon]="faSearch"></fa-icon></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-3 p-3 bg-white">
+    <h5 class="fw-bold m-0">Subjects ({{ subjectCount }})</h5>
+    <p class="text-muted m-0">
+      All Subjects available in your institute are listed here along with their
+      details. This section helps in managing and keeping track of the teachers
+      associated with your institution efficiently.
+    </p>
+
+    <div class="subject-responsive mt-3" *ngIf="allSubjects && allSubjects.length > 0">
+        <div class="container mt-4">
+            <div class="row">
+                <div *ngFor="let subject of (searchTerm ? filteredSubjects : allSubjects)" class="col-lg-4 col-md-6">
+                    <div class="subject-card">
+                        <div class="subject-title">
+                            {{ subject.subject_Name }} <i class="bi bi-globe"></i>
+                            <span>
+                                <a class="text-primary" style="padding-right: 7px">
+                                    <fa-icon [icon]="faEdit"></fa-icon>
+                                </a>
+                                <a class="text-danger">
+                                    <fa-icon [icon]="faTrash"></fa-icon>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="subject-meta">
+                            <a class="text-primary">
+                                <fa-icon [icon]="faBookOpen"></fa-icon>
+                            </a>
+                            {{ subject.chapterCount }} Chapters
+                            <a class="text-primary">
+                                <fa-icon [icon]="faBook"></fa-icon>
+                            </a>
+                            {{ subject.topicCount }} Topics
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                
+
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addUserModalLabel">Create Subject</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-2">
+              <label for="name" class="form-label">Subject Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Subject Name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="program" class="form-label"
+                >Which Class is this subject enrolled for?</label
+              >
+              <ng-multiselect-dropdown
+                [placeholder]="'Select one or more Class'"
+                [settings]="dropdownSettings"
+                [data]="classList"
+                [(ngModel)]="classSelectedItems"
+                (onSelect)="onItemSelect($event)"
+                (onSelectAll)="onSelectAll($event)"
+                name="selectClass"
+              >
+              </ng-multiselect-dropdown>
+            </div>
+            <div class="mb-3">
+              <label for="program" class="form-label"
+                >Which chapter is this class enrolled for?</label
+              >
+              <ng-multiselect-dropdown
+                [placeholder]="'Select one or more Class'"
+                [settings]="dropdownSettings"
+                [data]="chapterList"
+                [(ngModel)]="chapterSelectedItems"
+                (onSelect)="onItemSelect($event)"
+                (onSelectAll)="onSelectAll($event)"
+                (onItemDeSelect)="onItemDeSelect($event)"
+                (onDeSelectAll)="onDeSelectAll($event)"
+                name="selectChapter"
+              >
+              </ng-multiselect-dropdown>
+            </div>
+            <div class="mb-3">
+              <label for="program" class="form-label"
+                >Which topic is this class enrolled for?</label
+              >
+              <ng-multiselect-dropdown
+                [placeholder]="'Select one or more Class'"
+                [settings]="dropdownSettings"
+                [data]="topicList"
+                [(ngModel)]="topicSelectedItems"
+                (onSelect)="onItemSelect($event)"
+                (onSelectAll)="onSelectAll($event)"
+                name="selectTopic"
+              >
+              </ng-multiselect-dropdown>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Cancel
+          </button>
+          <button type="button" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="exampleModal1"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addUserModalLabel">Create Chapter</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-2">
+              <label for="name" class="form-label">Chapter Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="program" class="form-label"
+                >Which subject is this chapter enrolled for?</label
+              >
+              <ng-multiselect-dropdown
+                [placeholder]="'Select one or more Class'"
+                [settings]="dropdownSettings"
+                [data]="subjectList"
+                [(ngModel)]="subjectSelectedItems"
+                (onSelect)="onItemSelect($event)"
+                (onSelectAll)="onSelectAll($event)"
+                name="selectClass"
+              >
+              </ng-multiselect-dropdown>
+            </div>
+            <div class="mb-3">
+              <label for="program" class="form-label">Add Topic</label>
+              <tag-input [(ngModel)]="items" name="taginp"></tag-input>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Cancel
+          </button>
+          <button type="button" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,138 @@
+body {
+    background-color: #f8f9fa;
+}
+.mt-3.p-3.bg-white {
+    padding-left: 11 !important;
+    margin-left: -11px;
+}
+.mt-3.p-3.bg-white > h5 {
+    font-family: Karla, sans-serif;
+}
+
+
+/* Search Bar Styling */
+.search-bar {
+    position: relative;
+    width: 300px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 45px 12px 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: white;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 400px) {
+    .search-bar {
+        width: 100%;
+        max-width: 250px;
+        margin-left: auto;
+        margin-top: 10px; /* Adds gap between button and search */
+    }
+}
+
+
+
+.subject-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgb(31, 30, 30);
+    margin-bottom: 15px;
+    margin-left: -11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.subject-title {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+.subject-title i {
+    margin-left: 5px;
+    color: #275df5;
+}
+.subject-badge {
+    background-color: #b3e5fc;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    display: inline-block;
+    margin: 3px;
+}
+.subject-meta {
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.subject-meta i {
+    margin-right: 5px;
+}
+.menu-icon {
+    cursor: pointer;
+    color: blue;
+}
+
+
+
+.form-control, .ng-multiselect-dropdown .dropdown-btn {
+    border: none !important;
+    border-bottom: 2px solid #ced4da !important;
+    border-radius: 0 !important;
+    padding: 6px 6px 6px 0;
+}
+.form-control, .ng-multiselect-dropdown .dropdown-btn {
+    border: none !important;
+    border-bottom: 2px solid #ced4da !important;
+    border-radius: 0 !important;
+    padding: 6px 6px 6px 0;
+}
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid #007bff !important;
+}
+.mb-2 {
+    margin-bottom: 8px !important;
+}
+.form-label {
+    margin-bottom: 0 !important;
+    display: block;
+}
+.d-flex.gap-2 {
+    gap: 10px !important;
+}
+.form-check-input {
+    width: 2.5em;
+    height: 1.5em;
+    border: 2px solid #ced4da;
+    position: relative;
+    left: 20px;
+}
+.form-check-input:checked {
+    border: none;
+}
+/* .tog {
+    display: flex;
+} */
